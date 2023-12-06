@@ -1,0 +1,253 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.split-background {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+/*.nu-logo-container{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex:1;  
+} */
+.nuIcon{
+    height: 160px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+
+}
+.left {
+    display: flex;
+    flex: 0 0 25%;
+
+    max-width: 100%;
+    background-color: rgba(53,64,142,1);
+    background-size: cover;
+    background-position: center;   
+    text-align: center; 
+    align-items: self-start;
+    flex-direction: column;  /*if display:flex is activated, activate this*/ 
+    position: relative;
+}
+
+.right{
+    display: flex;
+    flex: 1;
+    background-image: url(nuBCKGRND.png);
+    background-size: contains;
+    
+    background-position: center;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;  
+    
+}  
+
+.thumbBox{
+    display: flex;
+    align-items: center;
+}
+
+.thumbIcon{
+    width: 90px; 
+    height: 80px; 
+    margin-left: 20px;
+}
+
+.details{
+    text-align: left;
+    padding-left: 2%;
+    line-height: 20pt;
+    margin-right: 50px;  
+}
+
+.largeText{
+    font-size: 30px;
+    color: rgba(246, 205, 45, 1);
+    font-family: sans-serif;
+    text-shadow: 1.2px 1.2px black;
+}
+
+.smallText{
+    text-align: justify;    
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.thunderBox{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.thunderIcon{
+    width: 90px; 
+    height: 80px; 
+    margin-left: 20px;
+}
+.peopleBox{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width:fit-content
+}
+
+.peopleIcon{
+    width: 90px; 
+    height: 80px; 
+    margin-left: 20px;
+}
+
+.login-form {
+    background-color: rgb(162, 193, 237, 0.8); 
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 12%;
+    margin: 20px;
+    height: auto;
+    width: auto;
+    max-width: 500px;
+}
+
+@media (width <= 1000px) {
+    .split-background {
+        flex-direction: column; /* Stack elements vertically */ 
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        flex: 1;
+        background-image: url(nufv.webp);
+    }
+    .login-form {
+        background-size: cover;
+        background-position: center;
+        display: block; /* Show the login form */
+    }
+}
+
+@media (height <=600px) { /*like an if else for minimizing height */
+    .split-background {
+        flex-direction: column; /* Stack elements vertically */   
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        flex: 1;
+        background-image: url(nufv.webp);
+    }
+    .login-form {
+        background-color: 0; /* Set the form background to match the left side background */
+        background-size: cover;
+        background-position: center;
+        display: block; /* Show the login form */
+    }
+}
+
+.user{
+    background-color: rgba(185, 177, 177, 0.6);
+    height: 45px;
+    top:50%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.pass{
+    background-color: rgba(185, 177, 177, 0.6);
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.user input{
+    height:43px;
+    width: 100%;
+    background-color: white;
+    border:none;
+
+}
+.pass input{
+    height: 43px;
+    width: 100%;
+    background-color: white;
+    border:none;
+}
+
+.login-form button{
+    background-color: rgba(244, 191, 56, 0.89);
+    border: none;
+    color: white;
+    display: flex;
+    width: 90px;
+    height: 30px;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: left;
+}
+.login-form h1{
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 1.5px 1.5px #000000;
+}
+.login-form h2{
+    color: rgba(239, 194, 79, 0.89);
+    font-family: sans-serif;
+    text-shadow: 1px 1px rgb(91, 99, 36);
+}
+.login-form img{
+    font-size:1rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-top: 2px;
+    margin: 8px;
+}
+.user input{
+    font-family:sans-serif;
+    font-weight: bold;
+    outline: none;
+}
+.pass input{
+    font-family:sans-serif;
+    font-weight: bold;
+    outline: none;
+}
+.note{
+    font-family: sans-serif;
+    margin-top: 50px;
+    text-align: justify;
+    color:white;
+    font-size: 0.8rem;
+}
+.loginButton img{
+    height: 20px;
+    width: 20px;
+}
+.loginButton button{
+    font-weight: bold;
+}
+.pass img{
+    cursor: pointer;
+}
+.error{
+    color: white;
+    background-color: red;
+    padding: 5px;
+    font-size: 15px;
+    font-family: Calibri, sans-serif;
+
+}
+
+
+
