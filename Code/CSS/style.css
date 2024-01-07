@@ -1,0 +1,296 @@
+#backButton, #nextButton {
+    margin-top: 20px;
+    padding: 5px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    width: 13.2%;
+}
+
+#sdao_description {
+    margin-top: 25px;
+   text-align: left;
+    font-weight: bold;
+}
+.activity-type {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-type label[for="activity-type"] {
+    font-weight: bold;
+}
+
+.activity-options label {
+    white-space: nowrap;
+}
+
+.Others-line {
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.Others-line hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd; 
+    margin: 10px 0; 
+}
+
+.others-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.others-input p {
+    white-space: nowrap;
+    text-align: center;
+    margin: 0 5px 0 0; 
+}
+
+.others-input input {
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px; 
+}
+
+
+.form {
+    text-align: center;
+}
+
+.form p {
+    text-align: center;
+}
+
+.Form1{
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+body {
+    background-color: #f8f8f8; 
+}
+.Others-line hr {
+    width: 330%;
+    border: none;
+    border-top: 4px solid #2e2e2e; 
+    margin: 10px auto;
+}
+.Form1 {
+    text-align: center;
+    padding-top: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10%;
+    background-color: #ffffff; 
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin: auto;
+    max-width: 900px; 
+}
+#form_description {
+    margin-top: 2px; 
+    margin-bottom: 30px;
+}
+#student_activity_request_form {
+    position: absolute; 
+	top: 195px;
+	left: 243px;
+	width: 1457px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#nu_fairview {
+    position: absolute; 
+	top: 60px; 
+    left: 570px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #30408D;
+    margin-top: 10px; 
+}
+
+#student_development_activities_office {
+    position: absolute; 
+    top: 115px; 
+    left: 570px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #323F8D;
+    margin-top: -6.3333333333333px;
+}
+
+#image_8 {
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    width: 200px;
+    max-width: 400px; 
+    height: 100px;
+    margin-top: 20px; 
+}
+
+
+.First-line,
+.Second-line,
+.Third-line,
+.fourth-line,
+.Fifth-line{
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5%;
+}
+.Eleventh-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 10px;
+    height: auto;
+    width: 900px;
+}
+
+
+
+#nu_fairview {
+    width: 316.2px;
+    height: 48.2px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 36px;
+	color:#30408D;
+}
+
+
+
+
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.form-group label {
+    text-align: left;
+    margin-bottom: .7%;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1%; 
+}
+
+.program_organization{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.program_organization label{
+    text-align: left;
+    margin-bottom: .7%;
+}
+
+.program_organization input{
+    box-sizing: border-box;
+    padding: .7%; 
+}
+
+.activity_objective{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.activity_objective label{
+    text-align: left;
+    margin-bottom: .7%;
+}
+
+.activity_objective input{
+    box-sizing: border-box;
+    padding: 2%; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.form-group label {
+    text-align: left;
+    margin-bottom: .7%;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+.activity-type {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.activity-options {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
+
+.activity-options label {
+    margin-right: 20px; 
+}
+
+.activity-options input {
+    margin-bottom: 1.5%;
+}
+
+.target-participants input {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+.activity-options2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    text-align: left;
+}
+
+.activity-inclusion-title {
+    grid-column: span 3; 
+    margin-bottom: 10px; 
+    text-align: left;
+}
+
+.activity-options2 label {
+    margin-right: 10px;
+    text-align: left;
+}
+
+.activity-options2 input {
+    margin-bottom: 10px;
+    
+}

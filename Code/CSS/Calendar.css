@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.split-background{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+.nuIcon{
+    max-height: 100%; /*original: 120px*/
+    max-width: 100%;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.left{
+    display: flex;
+    flex: 0 0 250px; /*original: 0 0 28%*/
+    height: auto;
+    width: auto;
+    background-color: rgba(53,64,142,1);
+    background-size: cover;
+    background-position: center;   
+    text-align: center; 
+    align-items: center;
+    flex-direction: column;
+    border-bottom-right-radius: 105px; 
+    position: relative;
+    padding: 0% 2% 2% 2%;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.navbar {
+    width: 350px;
+    height: fit-content;
+    position: relative;
+    overflow: auto;
+    margin-top: 12%;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar li {
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+/*-----------------------------------------------------------*/
+.navbar a{   /*mga navbar, a href*/
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+    height: 42px;
+    width: 350px;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.navbar a.home{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.navbar a.status{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.navbar a.approvalworkflow{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.navbar a.timeline{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.navbar a.calendar{
+    pointer-events: none;
+    background-color: white;
+    color: rgba(53,64,142,1);
+    display: flex;
+    align-items: center;
+}
+.navbar a.reports{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.navbar a.accounts{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.navbar a:hover {
+    background-color: #ffffff; /* Highlight links on hover */
+    color: rgba(53,64,142,1);
+}
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #fff; /* Background color for the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow to the content */
+    border-radius: 5px; /* Add rounded corners to the content */
+}
+.homeIcon{
+    margin: 32px;
+    height: 38px;
+    -webkit-user-drag: none;
+}
+.statusIcon{
+    margin: 29px; 
+    height: 47px;
+    -webkit-user-drag: none;
+}       
+.approvalworkflowIcon{
+    margin: 26px;
+    height: 40px;
+    -webkit-user-drag: none;
+}
+.timelineIcon{
+    margin: 22px;
+    height: 40px;
+    -webkit-user-drag: none;
+}
+.calendarIcon{
+    margin: 26px;
+    -webkit-user-drag: none;
+}
+.reportsIcon{
+    margin: 22px;
+    -webkit-user-drag: none;
+}
+.accountIcon{
+    margin: 5px;
+    -webkit-user-drag: none;
+}
+.line{
+    background-color: rgba(246, 205, 45, 1);
+    height: 2px;
+    width: 84%;   
+    margin-top: 10%;
+    margin-bottom: 2%;
+    -webkit-user-drag: none;
+    user-select: none; 
+}
+.buttons{
+    /*border: solid 5px;*/
+    padding: 5px;
+    text-align: left;
+}
+.buttons img{ 
+    background-color: rgba(53,64,142,1);
+    display: block;
+    height: 40px;
+    width: 34px;
+    -webkit-user-drag: none;
+    cursor: pointer;
+}
+.lgoutbtn{
+    background-color: rgba(53,64,142,1);
+    border: none;
+    margin-left: 24%;
+}
+.profilebtn{
+    background-color: rgba(53,64,142,1);
+    border: none;
+    margin-right:28%;
+}
+
+/* RIGHT SIDE ______________________________________________________________*/
+
+
+.right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /*background-image: url(nufv.webp);*/
+    background-color: white;
+    background-size:cover;
+    background-position: center;
+    min-height: 100vh;
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    user-select: none; 
+                
+}
+.title{
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    height: 100px;
+    margin-top: 1%;
+    padding: 20px 100px 0px 100px;  
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.h1Title{
+    margin-bottom: 1.1%;
+}
+.lineSeparator{
+    width: 99.8%;
+    height: 2.5px;
+    background-color: black;
+    
+}
+.Content{
+    font-weight: lighter;
+    height: 100%;
+    padding: 20px 100px 0px 100px; 
+}
+
+
+
