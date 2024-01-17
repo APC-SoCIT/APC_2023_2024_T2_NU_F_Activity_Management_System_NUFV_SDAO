@@ -50,7 +50,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
 
         <div class="right">
         <div class="title">
-                <h1 class="h1Title">STUDENT ACTIVITY REQUEST FORM</h1>
+                <h1 class="h1Title"></h1>
            
             <div class="lineSeparator">
 
@@ -59,9 +59,9 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
             </div>
             <div class="Content">
                 <!--CONTENT -------------------------------------------------------------------------------------->
-               
-
-            </div>
+                <h1 class="ty">Thank You</h1>
+                <div class="lineSeparator2"></div>
+                <p class="formSubmitted">The Form was successfully submitted</p>
         
 
         </div>

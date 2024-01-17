@@ -19,7 +19,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
         <ul>
             <li><a href="StudHomepage.php" class="home"><img src="IMG/homeIcon2.png" class="homeIcon"></img>Home</a></li>
 
-            <li><a href="StudSarfpage.php" class="form"><img src="IMG/form.png" class="formIcon">Request Form</a></li>
+            <li><a href="index.php" class="form"><img src="IMG/formIcon2.png" class="formIcon">Request Form</a></li>
 
             <li><a href="StudStatuspage.php" class="status"><img src="IMG/statusIcon.png" class="statusIcon">Status</a></li>
             

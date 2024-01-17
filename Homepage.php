@@ -25,39 +25,44 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
 
             <div class="bottom">
                 <div class="cardHolder">
-                    <div class="card">
-                        <a href="Statuspage.php" class="status"><img src="IMG/statusIcon2.png" class="statusIcon2">Activity Status</a>
+                    <div class="card" onclick="loadContent('Status')">
+                        <div class="a"><img src="IMG/statusIcon2.png" class="statusIcon2">Activity Status</div>
                         <p class="p1">Provide real-time updates on ongoing events or activties.</p>
                     </div>
 
-                    <div class="card">
-                        <a href="Approvalpage.php" class="approval"><img src="IMG/approvalworkflowIcon2.png" class="Icon">Approval Workflow</a>
+                    <div class="card" onclick="loadContent('Approval')">
+                        <div class="a"><img src="IMG/approvalworkflowIcon2.png" class="Icon">Approval Workflow</div>
                         <p class="p2">Streamlines decision-making, enabling efficient review and approval of activities.</p>
                     </div> 
 
-                    <div class="card">
-                        <a href="Timelinepage.php" class="timeline"><img src="IMG/timeline2.png" class="Icon">Completed Activities</a>
+                    <div class="card" onclick="loadContent('Timeline')">
+                        <div class="a"><img src="IMG/timeline2.png" class="Icon">Completed Activities</div>
                         <p class="p3">Provides a chronological overview of key events and milestones in the organization's history.</p>
                     </div> 
 
-                    <div class="card">
-                        <a href="Calendarpage.php" class="calendar"><img src="IMG/calendar2.png" class="calendarIcon">Activity Calendar</a>
+                    <div class="card" onclick="loadContent('Calendar')">
+                        <div class="a"><img src="IMG/calendar2.png" class="calendarIcon">Activity Calendar</div>
                         <p class="p4">View and manage upcoming events and schedules.</p>
                     </div>
 
-                    <div class="card">
-                        <a href="Reportspage.php" class="report"><img src="IMG/reportsIcon2.png" class="Icon">End Activity Report</a>
+                    <div class="card" onclick="loadContent('Reports')">
+                        <div class="a"><img src="IMG/reportsIcon2.png" class="Icon">End Activity Report</div>
                         <p class="p5">Quick access to event summaries by student organizations.</p>
                     </div>             
 
-                    <div class="card">
-                        <a href="Accountpage.php" class="account"><img src="IMG/profile2.png" class="Icon">Manage Account</a>
+                    <div class="card" onclick="loadContent('Accounts')">
+                        <div class="a"><img src="IMG/profile2.png" class="Icon">Manage Account</div>
                         <p class="p6">It offers user-friendly interfaces for account creation, updates, and permissions.</p>
                     </div>
                 </div>   
             </div>     
 
     </div>
+    <script>
+                function loadContent(Page){
+                    window.location.href = `Navbarpage.php?Page=${Page}`;
+                }
+    </script>
     
 </body>
 </html>

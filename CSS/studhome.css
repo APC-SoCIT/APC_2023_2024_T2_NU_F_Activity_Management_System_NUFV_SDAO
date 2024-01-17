@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: Calibri, sans-serif;
+    font-size: 40px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.p1{
+    font-family: Calibri, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    margin: 15%;
+    margin-left: 25%;
+    margin-top: -40px;
+    cursor: default;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.p2{
+    font-family: Calibri, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    margin: 15%;
+    margin-left: 25%;
+    margin-top: -25px;
+    cursor: default;
+    user-select: none;
+}
+.p3{
+    font-family: Calibri, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    margin: 15%;
+    margin-left: 25%;
+    margin-top: -36px;
+    cursor: default;
+    user-select: none;
+}
+.nuIcon{
+    height: 100%; 
+    width: auto;
+    cursor: default;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.split-background{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;   
+}
+.top{
+    height: 14%;
+    width: auto;
+    background-color: rgba(53,64,142,1);
+    border-bottom-right-radius: 60px;
+    padding: 10px;   
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.mid{
+    margin-left: 12%;
+    margin-bottom: 2%;
+    margin-top: 2%;   
+}
+.line{
+    width: 60%;
+    height: 2.5px;
+    margin-top: 0.8%;
+    color: black;
+    background-color: black;   
+    user-select: none;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.cardHolder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+a{
+    display: flex;
+    margin-top: 11%;
+    text-decoration: none;
+    color: #35408E;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+@media screen and (width<=855px){
+    .cardHolder{
+        gap:0%;
+    }
+}
+.card{
+    justify-content: center;
+    padding: 10px;
+    padding-top: 10px;
+    text-align: center;
+    width: 260px;
+    margin: 20px;
+    height: 135px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    box-shadow: -1px 2px 4px hsl(0, 0%, 53%);
+    box-sizing: border-box;
+    margin-left: 4.5%;
+    margin-right: 50px;
+}
+/*----------------------------------ICONSSSSS*/
+.statusIcon2{
+    height: 50px;
+    -webkit-user-drag: none;
+}
+.calendarIcon{
+    height: 30px;
+    width: 30px;
+    margin: 9px;
+    border-radius: 60%;
+    border: solid 2px;
+    padding: 5px;
+    -webkit-user-drag: none;
+}
+.profileIcon{
+    height: 0px;
+    -webkit-user-drag: none;
+}
+.Icon{
+    height: 40px;
+    width: 40px;
+    margin: 9px;
+    border-radius: 60%;
+    border: solid 2px;
+    -webkit-user-drag: none;
+}
+
+
+
+
+
+
+
+
+

@@ -9,40 +9,12 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Approval.css">
+    <script src="functions.js"></script>
     <title>Document</title>
 </head>
 <body>
       <div class="split-background">
-        <div class="left">
-            <img src="IMG/nuStamp.png" alt="Icon" class="nuIcon">
-            <div class="navbar">
-        <ul>
-            <li><a href="Homepage.php" class="home"><img src="IMG/homeIcon2.png" class="homeIcon"></img>Home</a></li>
-            <li><a href="Statuspage.php" class="status"><img src="IMG/statusIcon.png" class="statusIcon">Activity Status</a></li>
-            <li><a href="Approvalpage.php" class="approvalworkflow"><img src="IMG/approvalworkflowIcon.png" class="approvalworkflowIcon">Approval Workflow</a></li>
-            <li><a href="Timelinepage.php" class="timeline"><img src="IMG/orgsIcon.png" class="timelineIcon">Completed Activities</a></li>
-            <li><a href="Calendarpage.php" class="calendar"><img src="IMG/calendarIcon.png" class="calendarIcon">Activity Calendar</a></li>
-            <li><a href="Reportspage.php" class="reports"><img src="IMG/reportsIcon.png" class="reportsIcon">End Activity Report</a></li>
-            <li><a href="Accountpage.php" class="accounts"><img src="IMG/accIcon.png" class="accountIcon">Manage Accounts</a></li>
-            <div class="line"></div>
-        </ul>
-        <div class=buttons>
-        <button class="profilebtn"><img src="IMG/profile.png" alt=""></button>
-
-        <!-- <a href="logout.php" class="logout">Logout</a> -->
-        <button id="logoutbtn" class="lgoutbtn"><img src="IMG/exit.png"></button>
-        <script>
-        var button = document.getElementById("logoutbtn");
-        button.addEventListener("click", function() {
-            window.location.href = "logout.php";
-        });
-    </script>
      
-    
-        
-        </div>
-    </div>
-        </div>
        
 
         <div class="right">
@@ -50,11 +22,76 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
                 <h1 class="h1Title">APPROVAL WORKFLOW</h1>
            
             <div class="lineSeparator">
+            <p class="reminderText">A streamlined procedure designed to review, authorize, and validate requests, ensuring that they meet predefined criteria or standards, before they are executed or implemented.</p>
+                
 
             </div>
 
             </div>
             <div class="Content">
+            <?php
+       $sname = "localhost:3307";
+       $uname = "root";
+       $password = "";
+       $db_name = "sarf";
+
+       $conn = new mysqli($sname, $uname, $password, $db_name);
+
+       if ($conn->connect_error) {
+           die("Connection failed: " . $conn->connect_error);
+       }
+
+       $sql = "SELECT activity_title, activity_types, program_organization, date_requested FROM sarf_requests";
+       $result = $conn->query($sql);
+
+       echo "<table>
+               <tr>
+                   <th class='blankNumber'></th>
+                   <th class='name'>Activity Name</th>
+                   <th class='type'>Activity Type</th>
+                   <th class='orgsName'>Orgs Name</th>
+                   <th class='date'>Date</th>
+                   <th class='status'>Status</th>
+                 
+               </tr>";
+
+               $numbering = 1;
+
+       while ($row = $result->fetch_assoc()) {
+           echo "<tr>
+                   <td class='numbering'>" . $numbering . "</td>
+                   <td class='activity_title'>" . $row["activity_title"] . "</td>
+                   <td class='activity_types'>" . $row["activity_types"] . "</td>
+                 
+                   <td class='program_org' onclick='goToApproval(\"" . $row["program_organization"] . "\")'>" . $row["program_organization"] . "</td>
+                   <td class='date_req'>" . $row["date_requested"] . "</td>
+                   <td class='status'>" . 'Pending' . "</td>
+                   
+                 </tr>";
+                 $numbering++;
+       }
+       echo "</table>";
+
+       $conn->close();
+   ?>
+
+   <script>
+    function goToApproval(programOrganization) {
+        var page = 'ApprovalProgresspage.php?org=' + programOrganization;
+        $.ajax({
+            url: page,
+            type: 'GET',
+            success: function(data) {
+                $('.right').html(data);  
+            },
+        });
+    }
+   </script>
+
+
+
+             
+         
                 
 
             </div>

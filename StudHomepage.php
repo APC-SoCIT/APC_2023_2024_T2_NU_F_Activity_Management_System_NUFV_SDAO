@@ -26,7 +26,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
             <div class="bottom">
                 <div class="cardHolder">
                 <div class="card">
-                <a href="index.html" class="sarf"><img src="IMG/approvalworkflowIcon2.png" class="Icon">SARF</a>
+                <a href="index.php" class="sarf"><img src="IMG/approvalworkflowIcon2.png" class="Icon">SARF</a>
                     <p class="p1">Direct link to propose and gain approval for student-led activities, serving as a vital bridge between students and administration.</p>
                 </div>
 
