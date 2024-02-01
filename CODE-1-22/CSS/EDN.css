@@ -1,0 +1,63 @@
+.nbBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 10px;
+    }
+    
+    .heading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #35408E;
+    padding: 0;
+    }
+    
+    .pageContent {
+    padding: 10px;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    }
+    
+    .innerpageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+    
+    table {
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    border: solid 2px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    }
+    
+    th, td {
+    width: 100%;
+    padding: 40px;
+    }
+    
+    .innerpageContent::-webkit-scrollbar {
+    width: 12px;
+    }
+    
+    .innerpageContent::-webkit-scrollbar-track {
+    background: whitesmoke;
+    }
+    
+    .innerpageContent::-webkit-scrollbar-thumb {
+    background-color: grey;
+    }
+    .button-container {
+    display: flex;
+    }
