@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.split-background{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;   
+
+}
+.top{
+    height: 140px;
+    width: auto;
+    background-color: rgba(53,64,142,1);
+    border-bottom-right-radius: 60px;
+    padding: 10px;   
+    -webkit-user-drag: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.forUsers{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    
+}
+.menu{
+    height: 32%;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    
+}
+.whiteLine{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.whiteLine.shorter{
+    width: 0px;
+    justify-content: flex-end;
+}
+.userDisplay{
+    width: auto;
+    height: 25px;
+    padding-top: 2px;
+    display: flex;
+    justify-content: right;
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    margin-right: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.userDisplay.hide{
+    visibility: hidden;
+}
+.menuPanel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*top: 45px;
+    right: 24px;*/
+    top: 45px;
+    right: 30px;
+    height: 220px;
+    width: 0px;
+    overflow: hidden;
+    transition: width 0.3s; 
+    /*background-color: rgba(53,64,142,0.2);*/
+    /*background-color: rgb(0, 0, 0, 0.7);*/
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(20px);
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    cursor: default;
+    
+}
+.menuPanel.show{
+    width: 280px;
+
+}
+.closeBtnContainer{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-top: 20px;
+    
+}
+.closeBtn{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.closeBtn:hover{
+    background-color: rgba(255,255,255,0.2);
+    color: black;
+}
+.userDetailHolder{
+    border-radius: 12px;
+    height: 160px;
+   
+}
+.userDetails{
+    margin: 12px;
+    height: auto;
+    width: 240px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    
+}
+.menuPanelBtn{
+    border-top: solid 1px;
+    height: 45px;
+    width: 85%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    padding: 0px;
+
+}
+#logoutbtn{
+    background-color: rgba(53,64,142,0);
+    border: none;
+    display: block;
+    -webkit-user-drag: none;
+}
+.btnHolder img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+
+
+.nuIcon{
+    height: 100%; 
+    width: auto;
+    cursor: default;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.mid{
+    margin-left: 12%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    
+}
+.line{
+    width: 60%;
+    height: 2.5px;
+    margin-top: 0.8%;
+    color: black;
+    background-color: black;   
+    user-select: none;
+}
+
+h1{
+    font-family: Calibri, sans-serif;
+    font-size: 40px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.cardHolder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.card{
+    justify-content: center;
+    padding: 10px;
+    padding-top: 10px;
+    text-align: center;
+    width: 260px;
+    margin: 20px;
+    height: 135px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    box-shadow: -1px 2px 4px hsl(0, 0%, 53%);
+    box-sizing: border-box;
+    margin-left: 4.5%;
+    margin-right: 50px;
+    cursor: pointer;
+}
+@media screen and (width<=855px){
+    .cardHolder{
+        gap:0%;
+    }
+}
+
+/*DESIGN FOR CARDS*/
+.a{
+    display: flex;
+    margin-top: 11%;
+    text-decoration: none;
+    color: #35408E;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+/*PARAGRAPHS INSIDE THE CARDS*/
+.p1{
+    font-family: Calibri, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin: 15%;
+    margin-left: 25%;
+    margin-top: -25px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.p2{
+    font-family: Calibri, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin: 15%;
+    margin-left: 24.5%;
+    margin-top: -34px;
+    cursor: pointer;
+    user-select: none;
+}
+.p3{
+    font-family: Calibri, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin: 15%;
+    margin-left: 24.5%;
+    margin-top: -34px;
+    cursor: pointer;
+    user-select: none;
+}
+.p4{
+    font-family: Calibri, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin: 15%;
+    margin-left: 24%;
+    margin-top: -34px;
+    cursor: pointer;
+    user-select: none;
+}
+.p5{
+    font-family: Calibri, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin: 15%;
+    margin-left: 24.5%;
+    margin-top: -34px;
+    cursor: pointer;
+    user-select: none;
+}
+.p6{
+    font-family: Calibri, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin: 15%;
+    margin-left: 24.5%;
+    margin-top: -35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*ICONS*/
+.statusIcon2{
+    height: 50px;
+    -webkit-user-drag: none;
+}
+.calendarIcon{
+    height: 39px;
+    width: 39px;
+    margin: 9px;
+    border-radius: 60%;
+    border: solid 2px;
+    padding: 5px;
+    -webkit-user-drag: none;
+}
+.Icon{
+    height: 40px;
+    width: 40px;
+    margin: 9px;
+    border-radius: 60%;
+    border: solid 2px;
+    -webkit-user-drag: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

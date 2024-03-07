@@ -1,0 +1,339 @@
+.Form2 {
+    text-align: center;
+    padding-top: 4%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    background-color: #ffffff; 
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin: auto; 
+    max-width: 900px;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+    align-items: center;
+}
+.imgAndNU{
+    display: flex;
+    align-items: center;
+    margin-left: -25%;
+   
+}
+#nu_fairview {
+    left: 570px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #30408D;
+    margin-top: 10px;
+    margin-left: -3%;
+   
+}
+#nu_fairview {
+     width: 316.2px;
+     height: 48.2px;
+     overflow: hidden;
+     font-family: Inter;
+     font-size: 32px;
+     font-weight: bold;
+     text-align: left;
+     line-height: 36px;
+     color:#30408D;
+ }
+ #image_8 {
+
+    left: 400px;
+    width: 200px;
+    max-width: 400px; 
+    height: 100px;
+    margin-top: 20px;
+ 
+}
+ 
+#student_development_activities_office {
+    font-size: 17px;
+    font-weight: bold;
+    color: #323F8D;
+    margin-top: 5%;
+    margin-left: -28.4%;
+   
+}
+#student_activity_request_form {	
+	width: 1000px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-top: 5%;
+   
+}
+
+#form_description {
+    margin-top: 1.2%; 
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.bold-left-label,
+.bold-left-label1 {
+    font-weight: bold;
+}
+.bold-left-label-container{
+    width: 120%;
+    text-align: left;
+    margin-left: -15%;
+    margin-top: 3.5%;
+
+}
+
+
+.checkbox-pair1{
+    left: 50px;
+}
+.eight-container {
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 40px; 
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.eight input {
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 10px; 
+}
+
+
+.eight1 {
+  
+   
+    text-align: left; 
+}
+
+
+.eight1 input {
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
+#others_indicate{
+    margin-left: 10px;
+
+}
+.others-input {
+    margin-left: -40px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
+
+.others-input p {
+    white-space: nowrap;
+    text-align: center;
+    margin: 0 5px 0 0;
+}
+
+.others-input input {
+
+    width: 40%;
+    box-sizing: border-box;
+    padding: 5px; 
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 3px solid #070707; 
+    margin: 40px 0; 
+}
+
+.nine {
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 40px; 
+}
+.nine input {
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 10px; 
+}
+
+.bold-label {
+    font-weight: bold;
+}
+
+.bold-text {
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.checkbox-pair {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; 
+  
+}
+
+
+.checkbox-pair input {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.nine1{
+    margin-top: -29px;
+   margin-left: 50px;
+
+}
+
+.nine2{
+    margin-top: -59px;
+   margin-left: 450px;
+
+}
+.nine3{
+    margin-left: 100px;
+
+}
+
+.ten{
+    text-align: left;
+}
+.ten input{
+    margin-left: 5.6%;
+}
+.bold-label2 {
+    font-weight: bold;
+    margin-left: 4.4%;
+}
+.eleven{
+    text-align: left;
+    
+}
+.eleven label{
+    margin-left: 6.4%;
+}
+
+.eleven p strong {
+    font-weight: bold;
+    text-align: left;
+    margin-left: 4%;
+}
+.eleven p span {
+    font-weight: normal;
+}
+.eleven label strong {
+    font-weight: bold;
+}
+.checkbox-label {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+.eleven1{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.eleven1 input{
+    border: solid 3px;
+    margin-left: 50px;
+}
+.eleven1 p {
+    font-weight: bold;
+    margin-left: 45px;
+}
+.checkbox-container {
+    display: flex;
+    flex-direction: row;       
+    align-items: left;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.checkbox-label {
+    margin-right: 20px; 
+    text-align: left;
+}
+
+.checkbox-group {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    
+}
+
+.checkbox-label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+
+.attachmennt-section {
+    margin-left: auto; 
+    margin-right: 50px; 
+    text-align: right; 
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    text-align: left; 
+}
+
+.custom-file-input-label {
+    margin-left: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+  
+
+  
+}
+
+.button-container button {
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 5px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    width: 13.2%;
+  
+
+}
+
+
+
+#submit {
+
+    right: 50px;
+    margin-top: 200px;
+    padding: 5px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+#button {
+
+    left: 20px;
+    margin-top: 200px;
+    padding: 5px 20px; 
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+

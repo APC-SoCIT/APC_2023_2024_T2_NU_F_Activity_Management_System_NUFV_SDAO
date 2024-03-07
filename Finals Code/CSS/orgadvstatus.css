@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* RIGHT SIDE ______________________________________________________________*/
+
+.right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /*background-image: url(nufv.webp);*/
+    background-color: white;
+    background-size:cover;
+    background-position: center;
+    min-height: 100vh;
+    height: auto;
+    width: auto;
+    max-height: 100%; 
+
+                
+}
+.title{
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    height: 100px;
+    margin-top: 1%;
+    padding: 20px 100px 0px 100px;  
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family: sans-serif;
+    
+}
+.h1Title{
+    margin-bottom: 1.1%;
+}
+.lineSeparator{
+    width: 99.8%;
+    height: 2.5px;
+    background-color: black;
+    padding: 1px;
+}
+.reminderText{
+    font-size: 14px;
+   margin-top: 1.1%;
+   font-weight: lighter;
+}
+.Content{
+    font-weight: lighter;
+    height: 100%;
+   
+}
+
+table{
+    table-layout: fixed;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-collapse: collapse;
+    
+}
+table, td{
+    width: 920px;
+    /*height: 60px;*/
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: center; 
+}
+td{
+    border: solid 2px;
+    background-color: rgba(201, 237, 252, 0.26);
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 65px;
+}
+
+th{
+    height: 40px;
+    border-collapse: collapse;
+    border: solid 1px;
+    text-align: center;
+    background-color: rgba(237, 237, 237, 1);
+    font-family: sans-serif;
+    font-size: 20px;
+    
+   
+}
+.blankNumber{
+    border: none;
+    width: 10%;
+    background-color: transparent;
+}
+.numbering{
+    background-color: rgba(237, 237, 237, 1);
+    border: solid 1px;
+    width: 13%;
+}
+th.name{
+    width: 20%;
+}
+th.type{
+    width: 20%;
+}
+th.orgsName{
+    width: 20%;
+}
+th.date{
+    width: 13%;
+}
+td.status{
+    width: 13%;
+}
+.program_org{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+
+
